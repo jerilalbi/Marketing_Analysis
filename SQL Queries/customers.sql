@@ -12,6 +12,8 @@ SELECT * FROM DUP_CHECK WHERE RowNO > 1;
 
 SELECT * FROM geography;
 
+-- Final Query
+
 SELECT CustomerID, CustomerName, Email, Gender, Age, Country, City
 FROM customers custom
 LEFT JOIN geography geo

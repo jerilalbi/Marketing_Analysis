@@ -13,6 +13,8 @@ SELECT * FROM DUP_CHECK WHERE RowNo > 1;
 UPDATE engagement_data 
 SET ContentType = LOWER(ContentType);
 
+-- Final Query
+
 SELECT EngagementID, ContentID,
 REPLACE(ContentType, "socialmedia","social media") as ContentType, Likes, EngagementDate, CampaignID, ProductID,
 SUBSTRING_INDEX(ViewsClicksCombined,'-',1) AS Views,

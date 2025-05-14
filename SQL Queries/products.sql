@@ -1,5 +1,7 @@
 SELECT * FROM products;
 
+-- Final Query
+
 SELECT ProductID, ProductName, Price,
 CASE
   WHEN Price < 50 THEN 'Low'

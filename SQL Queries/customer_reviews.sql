@@ -9,6 +9,8 @@ FROM customer_reviews
 
 SELECT * FROM DUP_CHECK WHERE RowNo > 1;
 
+-- Final Query
+
 SELECT ReviewID, CustomerID, ProductID, ReviewDate,Rating,
 REPLACE(ReviewText, "  ", " ") as ReviewText
 FROM customer_reviews
